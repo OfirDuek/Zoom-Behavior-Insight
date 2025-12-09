@@ -1,4 +1,4 @@
-# ZoomStudyFocusDetector
+# Zoom Behavior Insight
 
 A project for detecting study-focus signals from Zoom-like webcam frames and producing interpretable outputs (e.g., camera gaze, hand-held object, background, and headphones).
 
