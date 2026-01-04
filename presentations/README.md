@@ -1,6 +1,17 @@
 # Project presentations
 
-This folder contains the project presentations (PPTX/PDF).
+This folder contains the project presentations in both **PPTX** and **PDF** formats.
 
-## Files
-- [Presentation Part 1 (PPTX)](Presentation%20Part%201.pptx)
+## Available presentations
+
+- **First Presentation**
+  - [PPTX](./First_Presentation.pptx)
+  - [PDF](./First_Presentation.pdf)
+
+- **Interim Presentation**
+  - [PPTX](./Interim_Presentation.pptx)
+  - [PDF](./Interim_Presentation.pdf)
+
+## Notes
+- Files are named consistently to keep the repository organized.
+- The **Final Presentation** will be added here once completed.
