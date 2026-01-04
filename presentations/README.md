@@ -5,12 +5,12 @@ This folder contains the project presentations in both **PPTX** and **PDF** form
 ## Available presentations
 
 - **First Presentation**
-  - [PPTX](./First_Presentation.pptx)
   - [PDF](./First_Presentation.pdf)
+  - [PPTX](./First_Presentation.pptx)
 
 - **Interim Presentation**
-  - [PPTX](./Interim_Presentation.pptx)
   - [PDF](./Interim_Presentation.pdf)
+  - [PPTX](./Interim_Presentation.pptx)
 
 ## Notes
 - Files are named consistently to keep the repository organized.
