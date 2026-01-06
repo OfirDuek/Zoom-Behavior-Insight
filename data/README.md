@@ -5,11 +5,11 @@ This folder contains a small labeled sample of the dataset used in this project.
 ## Structure
 
 - `real/`
-  - `images/` — real Zoom-like images
-  - `labels.csv` — labels for the images in `real/images`
+  - Images: [`real/images/`](real/images/)
+  - Labels: [`real/labels.csv`](real/labels.csv)
 - `synthetic/`
-  - `images/` — synthetic Zoom-like images
-  - `labels.csv` — labels for the images in `synthetic/images`
+  - Images: [`synthetic/images/`](synthetic/images/)
+  - Labels: [`synthetic/labels.csv`](synthetic/labels.csv)
 
 ## Labels format
 
