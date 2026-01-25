@@ -11,6 +11,10 @@ This folder contains the project presentations in both **PPTX** and **PDF** form
 - **Interim Presentation**
   - [PDF](./Interim_Presentation.pdf)
   - [PPTX](./Interim_Presentation.pptx)
+ 
+- **Interim Presentation**
+  - [PDF](./Final_Presentation.pdf)
+  - [PPTX](./Final_Presentation.pptx)
 
 ## Notes
 - Files are named consistently to keep the repository organized.
