@@ -18,4 +18,3 @@ This folder contains the project presentations in both **PPTX** and **PDF** form
 
 ## Notes
 - Files are named consistently to keep the repository organized.
-- The **Final Presentation** will be added here once completed.
