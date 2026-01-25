@@ -2,6 +2,7 @@
 
 This folder contains the project notebooks:
 
-- **5.1 Data generation**: [`5_1_data_generation.ipynb`](./5_1_data_generation.ipynb)
-- **5.2 EDA**: [`5_2_eda.ipynb`](./5_2_eda.ipynb)
-- **5.3 Baseline evaluation**: [`5_3_baseline.ipynb`](./5_3_baseline.ipynb)
+- **Data generation**: [`data_generation.ipynb`](./data_generation.ipynb)
+- **EDA**: [`eda.ipynb`](./eda.ipynb)
+- **Baseline evaluation**: [`baseline.ipynb`](./baseline.ipynb)
+- **final_deit_multitask**: [`final_deit_multitask.ipynb`](.final_deit_multitask.ipynb)
