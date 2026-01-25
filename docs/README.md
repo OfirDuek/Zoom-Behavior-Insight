@@ -1,5 +1,6 @@
-# Documentation
+# Labeling Guidelines
 
-## Labeling guidelines
-- [PDF](./Labeling_Guidelines.pdf)
-- [DOCX](./Labeling_Guidelines.docx)
+The labeling guidelines are provided in both formats:
+
+- [PDF](Labeling_Guidelines.pdf)
+- [DOCX](Labeling_Guidelines.docx)
