@@ -1,35 +1,63 @@
 # Results
 
-This folder contains exported experiment results in machine-readable formats (CSV/JSON), as required for reproducibility and review.
+This folder contains the exported evaluation outputs of our experiments, saved in **machine-readable formats**
+so the project can be reviewed and reproduced without rerunning the full notebooks.
 
-## Structure
+We report results for:
+- **Baseline model:** ResNet18 multi-head classifier
+- **Final model:** DeiT multi-head classifier
 
-- `baseline_resnet18/` — baseline model results (ResNet18 multi-head)
-- `final_deit/` — final model results (DeiT multi-task / multi-head)
+The main task is multi-attribute prediction from a single Zoom-like frame, producing a behavior vector:
+**gaze**, **headphones**, **environment**, **privacy**, **object in hand**.
 
-Each subfolder includes:
-- `*_per_task_metrics.csv` — per-task metrics (one row per attribute)
-- `*_overall_metrics.csv` — overall metrics (aggregated across tasks)
-- `*_metrics.json` — combined metrics summary (per-task + overall) in JSON format
+---
 
-## Metrics
+## What’s inside?
 
-### Per-task metrics (`*_per_task_metrics.csv`)
-Reported for each attribute:
-- `accuracy` — fraction of correct predictions for that task
-- (If present) `macro_f1` — macro-averaged F1 score for that task
+Each experiment (baseline / final) includes **three files**:
 
-### Overall metrics (`*_overall_metrics.csv`)
-Reported across all tasks:
-- `avg_accuracy` — mean of per-task accuracies
-- `joint_accuracy` (a.k.a exact match) — a sample is counted correct only if **all tasks** are predicted correctly
+### 1) Per-task metrics (CSV)
+**File:** `*_per_task_metrics.csv`  
+Contains metrics **per attribute** (one row per task), e.g. accuracy and macro-F1.
+
+**Use case:** quick comparison between tasks (which attribute is easier/harder).
+
+### 2) Overall metrics (CSV)
+**File:** `*_overall_metrics.csv`  
+Contains overall summary numbers such as:
+- **avg_accuracy** – mean accuracy across tasks
+- **joint_accuracy** – “exact match”: a sample is correct only if **all tasks** are correct
+
+**Use case:** single-number summary and model-to-model comparison.
+
+### 3) Full metrics (JSON)
+**File:** `*_metrics.json`  
+A complete export of the experiment metrics in a structured format.
+This may include the same values as the CSVs (and optionally additional fields if available).
+
+**Use case:** programmatic parsing / future analysis / plotting.
+
+---
+
+## Baseline: ResNet18
+
+- Per-task metrics (CSV): [`baseline_resnet18_per_task_metrics.csv`](baseline_resnet18/baseline_resnet18_per_task_metrics.csv)
+- Overall metrics (CSV): [`baseline_resnet18_overall_metrics.csv`](baseline_resnet18/baseline_resnet18_overall_metrics.csv)
+- Full metrics (JSON): [`baseline_resnet18_metrics.json`](baseline_resnet18/baseline_resnet18_metrics.json)
+
+---
+
+## Final model: DeiT
+
+- Per-task metrics (CSV): [`final_deit_per_task_metrics.csv`](final_deit/final_deit_per_task_metrics.csv)
+- Overall metrics (CSV): [`final_deit_overall_metrics.csv`](final_deit/final_deit_overall_metrics.csv)
+- Full metrics (JSON): [`final_deit_metrics.json`](final_deit/final_deit_metrics.json)
+
+---
 
 ## Notes
 
-- Baseline numeric results were reconstructed to match the plotted results when raw logs were not available.  
-- All plots used in the report/presentation are stored under `visuals/results/`.
-
-## Related
-
-- Figures: `visuals/results/`
-- Notebooks: `notebooks/`
+- These files are meant to match the figures under `visuals/` and support the reported results.
+- The repository includes a **small sample** of the dataset under `data/` for review and reproducibility;
+  the full dataset is stored separately.
+- Naming is kept consistent across models to keep comparisons clear and to support automated parsing.
