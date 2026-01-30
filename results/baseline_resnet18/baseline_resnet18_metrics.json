@@ -1,0 +1,33 @@
+{
+  "model": "baseline_resnet18",
+  "split": "test",
+  "per_task": {
+    "gaze": {
+      "accuracy": 0.4992,
+      "macro_f1": null
+    },
+    "headphones": {
+      "accuracy": 0.4011,
+      "macro_f1": null
+    },
+    "environment": {
+      "accuracy": 0.8304,
+      "macro_f1": null
+    },
+    "privacy": {
+      "accuracy": 0.9437,
+      "macro_f1": null
+    },
+    "object": {
+      "accuracy": 0.4468,
+      "macro_f1": null
+    }
+  },
+  "overall": {
+    "avg_accuracy": 0.6199,
+    "joint_accuracy": 0.091
+  },
+  "notes": {
+    "macro_f1_baseline": "not available (only accuracy was extracted from plots)"
+  }
+}
