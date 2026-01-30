@@ -1,6 +1,0 @@
-task,accuracy,macro_f1
-gaze,0.5575,0.4357
-headphones,0.5977,0.5699
-environment,0.8908,0.4711
-privacy,0.9655,0.4912
-object,0.6897,0.3442
