@@ -11,7 +11,7 @@ They are hosted externally and can be downloaded from the link below.
 
 Download the checkpoint from Google Drive:
 
-- **ZoomBehaviorInsight_Weights**: <DRIVE_LINK_HERE>
+- **ZoomBehaviorInsight_Weights**: https://drive.google.com/drive/folders/1BraZyvrXbqqdqsR2qM3ws8Iy27OcvUWo?usp=drive_link
 
 The required file is:
 
