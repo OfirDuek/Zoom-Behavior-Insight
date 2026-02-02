@@ -29,11 +29,10 @@ The demo expects the following files/folders to exist:
   - `assets/demo_images/web_019.jpg`
   - `assets/demo_images/synth_00097.jpg`
 
-- **Model weights** (not stored in GitHub)
+- **Model weights**
   - `weights/val_best.pth`
 
-> We do **not** upload model weights to GitHub due to file size.  
-> Download `val_best.pth` from the **weights link in the main repository README**, then place it under `weights/`.
+> **Tip:** If you are using the **Demo ZIP package**, the required files (demo images + `val_best.pth`) are already included in the correct paths.
 
 ---
 
@@ -63,9 +62,12 @@ Make sure these demo images exist:
 
 ### 4) Add model weights
 
-Download the model checkpoint (`val_best.pth`) from the **weights link in the main repository README**, then place it here:
+Place the model checkpoint here:
 
 - `weights/val_best.pth`
+
+> The repository does not store weights directly.  
+> Use the **Demo ZIP package** (recommended) or follow `weights/README.md` for details.
 
 ### 5) Run inference
 
@@ -106,7 +108,8 @@ python scripts/extract_frames.py \
   --frames_per_video 10
 ```
 
-**Arguments**
+### Arguments
+
 - `--video_folder` — folder containing `.avi` videos (searched recursively)
 - `--output_folder` — output folder for extracted frames
 - `--frames_per_video` — number of frames to save per video (default: 10)
