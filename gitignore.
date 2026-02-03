@@ -3,7 +3,13 @@ __pycache__/
 *.pyc
 .DS_Store
 Thumbs.db
+
+# Archives (demo ZIP is uploaded via GitHub Releases, not committed)
 *.zip
+
+# Local outputs (not part of the repo)
 eda_out*/
 outputs*/
-results*/
+
+# Model weights (kept out of git; provided via Release/Drive)
+weights/*.pth
