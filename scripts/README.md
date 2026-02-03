@@ -1,7 +1,7 @@
 # Scripts
 
 Standalone Python scripts used in this project (outside the notebooks).  
-Includes a **demo inference** script (runs the final multi-task model on sample images), shared labeling utilities, and a small video-to-frames helper.
+Includes a **demo inference** script, shared label utilities, and a video-to-frames helper.
 
 ---
 
@@ -12,7 +12,7 @@ Includes a **demo inference** script (runs the final multi-task model on sample 
   `gaze`, `headphones`, `environment`, `privacy`, `object`.
 
 - **`label_utils.py`**  
-  Shared label mappings and constants used across scripts (label ↔ id, class names, etc.).
+  Shared label mappings and constants used across scripts.
 
 - **`extract_frames.py`**  
   Extracts frames from `.avi` videos (used to generate real-image frames from recorded videos).
@@ -23,29 +23,20 @@ Includes a **demo inference** script (runs the final multi-task model on sample 
 
 ### Expected paths (repository root)
 
-The demo expects the following files/folders to exist:
-
-- **Demo images**
+- Demo images:
   - `assets/demo_images/web_019.jpg`
   - `assets/demo_images/synth_00097.jpg`
 
-- **Model weights**
+- Model weights:
   - `weights/val_best.pth`
 
-> **Tip:** If you are using the **Demo ZIP package**, the required files (demo images + `val_best.pth`) are already included in the correct paths.
+> **Tip:** If you use the **Demo ZIP Release**, these files are already included in the correct paths.
 
 ---
 
 ## How to run
 
-### 1) Create required folders (if missing)
-
-```bash
-mkdir -p assets/demo_images
-mkdir -p weights
-```
-
-### 2) Install dependencies
+### 1) Install dependencies
 
 > Python 3.9+ recommended.
 
@@ -53,23 +44,7 @@ mkdir -p weights
 pip install torch torchvision timm pillow pandas
 ```
 
-### 3) Add demo images
-
-Make sure these demo images exist:
-
-- `assets/demo_images/web_019.jpg`
-- `assets/demo_images/synth_00097.jpg`
-
-### 4) Add model weights
-
-Place the model checkpoint here:
-
-- `weights/val_best.pth`
-
-> The repository does not store weights directly.  
-> Use the **Demo ZIP package** (recommended) or follow `weights/README.md` for details.
-
-### 5) Run inference
+### 2) Run inference
 
 From the **repository root**:
 
@@ -90,8 +65,6 @@ The script prints a prediction per task for each demo image:
 ---
 
 ## Extract frames from videos (optional utility)
-
-`extract_frames.py` is used to extract frames from `.avi` videos.
 
 ### Install (only if you use this script)
 
@@ -119,4 +92,4 @@ python scripts/extract_frames.py \
 ## Notes
 
 - These scripts are meant to be **minimal, reproducible, and easy to review**.
-- The full training pipeline and experiments are documented in the notebooks and results folders.
+- Full training pipeline and experiments are documented in the notebooks and results folders.
