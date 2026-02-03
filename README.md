@@ -29,7 +29,7 @@ The output must be **human-readable** and reproducible for quick evaluation and 
 
 > Add/replace the image below with your project visual abstract (recommended location: `visuals/visual_abstract.png`).
 
-![Visual Abstract](visuals/visual_abstract.png)
+![Visual Abstract](visuals/pipeline/visual_abstract_pipeline.png)
 
 ---
 
