@@ -31,6 +31,9 @@ The output must be **human-readable** and reproducible for quick evaluation and 
 
 ![Visual Abstract](visuals/pipeline/visual_abstract_pipeline.png)
 
+## Demo video
+[▶ Watch the demo video](https://github.com/OfirDuek/Zoom-Behavior-Insight/releases/download/demo-v1/Zoom_Behavior_Insight.mp4.mp4)
+
 ---
 
 ## Datasets used or collected
